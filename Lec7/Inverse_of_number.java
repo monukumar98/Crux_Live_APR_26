@@ -1,0 +1,28 @@
+package Lec7;
+
+import java.util.Scanner;
+
+public class Inverse_of_number {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();// 32145
+		System.out.println(Inverse(n));
+	}
+
+	public static int Inverse(int n) {
+		// TODO Auto-generated method stub
+		int sum = 0;
+		int palce = 1;
+		while (n > 0) {
+			int rem = n % 10;
+			sum = (int) (sum + palce * Math.pow(10, rem - 1));
+			palce++;
+			n = n / 10;
+		}
+		return sum;
+
+	}
+
+}
