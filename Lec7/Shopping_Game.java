@@ -8,11 +8,11 @@ public class Shopping_Game {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
 		int t = sc.nextInt();
-		while (t > 0) {
+		while (t-- > 0) {
 			int m = sc.nextInt();// Aayush
 			int n = sc.nextInt();// harshit
 			Winner(m, n);
-			t--;
+			// t--;
 		}
 
 	}
